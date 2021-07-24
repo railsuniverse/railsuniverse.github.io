@@ -1,0 +1,342 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/ico" href="images/favicon-32x32.png">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Rails Universe</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/stylesheets/picnic.css" rel="stylesheet" />
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="/javascripts/site.js"></script>
+  </head>
+  <body>
+    <nav class="demo">
+      <a href="#" class="brand">
+        <img src="/images/logo.png" class="logo" alt="" />
+      </a>
+
+      <!-- responsive-->
+      <input id="bmenub" type="checkbox" class="show">
+      <label for="bmenub" class="burger pseudo button">
+        <i class="material-icons">menu</i>
+      </label>
+
+      <div class="menu">
+        <a href="/" class="button large icon-puzzle">News</a>
+        <a href="#community" class="pseudo button large icon-puzzle">Community</a>
+        <a href="#twitter" class="pseudo button large icon-puzzle">Twitter</a>
+        <a href="#jobs" class="pseudo button large icon-puzzle">Jobs</a>
+        <a href="#youtube" class="pseudo button large icon-puzzle">Youtube</a>
+      </div>
+    </nav>
+
+    <main>
+    <div id="rails-org-div">
+      <i>rubyonrails.org:</i> <a href="https://guides.rubyonrails.org/" target="_blank">Guides</a> | <a href="https://api.rubyonrails.org/" target="_blank">API</a>
+    </div>
+    <br>
+
+    <i><img src="https://img.shields.io/gem/dt/rails?color=%23c60000"> <img alt="Gem" src="https://img.shields.io/gem/dtv/rails?color=%23c60000"> <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/w/rails/rails?color=%23c60000"> <img alt="GitHub contributors" src="https://img.shields.io/github/contributors-anon/rails/rails?color=%23c60000"> <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/rails/rails?color=%23c60000"> ~ its alive!</i>
+    <br>
+
+    <script src="https://cdn.jsdelivr.net/npm/rss-parser@3.12.0/index.min.js"></script>
+    <h2 id="news"><i class="material-icons">rss_feed</i> News <span class="label">latest</span></h2>
+<hr>
+<a name="community">
+  <h2 id="community">Community</h2>
+</a>
+<div class="flex one two-900">
+  <div style="background-color: #f0faff;" class="padding-right wrapper">
+    <h3 class="h-tag">Posts</h3>
+    <div id="posts-rss">
+      <div id="posts-rss-loading" class="loading"><div></div><div></div><div></div><div></div></div>
+    </div>
+  </div>
+  <div style="background-color: #feffd8;" class="padding-right wrapper">
+    <h3 class="h-tag">Questions</h3>
+    <div id="questions-rss">
+      <div id="questions-rss-loading" class="loading"><div></div><div></div><div></div><div></div></div>
+    </div>
+  </div>
+</div>
+
+<a name="twitter">
+  <h2 id="twitter">Twitter</h2>
+</a>
+
+<div class="flex one three-900">
+  <div style="background-color: #ffcfcf;" class="padding wrapper">
+    <a class="twitter-timeline"
+       href="https://twitter.com/rails">
+      <div class="loading"><div></div><div></div><div></div><div></div></div>
+    </a>
+  </div>
+  <div style="background-color: #f4f4f4;" class="padding-right wrapper">
+    <h3 class="h-tag">Core Team</h3>
+    <ul>
+      <li>
+        <label for="modal_dhh"" class="fake-link">DHH</label>
+
+        <div class="modal">
+          <input id="modal_dhh"" type="checkbox" />
+          <label for="modal_dhh"" class="overlay"></label>
+          <article>
+            <a class="twitter-timeline"
+               href="https://twitter.com/dhh"">
+               <div class="loading"><div></div><div></div><div></div><div></div></div>
+            </a>
+          </article>
+        </div>
+      </li>
+      <li>
+        <label for="modal_bitsweat" class="fake-link">Jeremy</label>
+
+        <div class="modal">
+          <input id="modal_bitsweat" type="checkbox" />
+          <label for="modal_bitsweat" class="overlay"></label>
+          <article>
+            <a class="twitter-timeline"
+               href="https://twitter.com/bitsweat">
+               <div class="loading"><div></div><div></div><div></div><div></div></div>
+            </a>
+          </article>
+        </div>
+      </li>
+      <li>
+        <label for="modal_tenderlove" class="fake-link">Aaron</label>
+
+        <div class="modal">
+          <input id="modal_tenderlove" type="checkbox" />
+          <label for="modal_tenderlove" class="overlay"></label>
+          <article>
+            <a class="twitter-timeline"
+               href="https://twitter.com/tenderlove">
+               <div class="loading"><div></div><div></div><div></div><div></div></div>
+            </a>
+          </article>
+        </div>
+      </li>
+      <li>
+        <label for="modal_fxn" class="fake-link">Xavier</label>
+
+        <div class="modal">
+          <input id="modal_fxn" type="checkbox" />
+          <label for="modal_fxn" class="overlay"></label>
+          <article>
+            <a class="twitter-timeline"
+               href="https://twitter.com/fxn">
+               <div class="loading"><div></div><div></div><div></div><div></div></div>
+            </a>
+          </article>
+        </div>
+      </li>
+      <li>
+        <label for="modal_rafaelfranca" class="fake-link">Rafael</label>
+
+        <div class="modal">
+          <input id="modal_rafaelfranca" type="checkbox" />
+          <label for="modal_rafaelfranca" class="overlay"></label>
+          <article>
+            <a class="twitter-timeline"
+               href="https://twitter.com/rafaelfranca">
+               <div class="loading"><div></div><div></div><div></div><div></div></div>
+            </a>
+          </article>
+        </div>
+      </li>
+      <li>
+        <label for="modal_pixeltrix" class="fake-link">Andrew</label>
+
+        <div class="modal">
+          <input id="modal_pixeltrix" type="checkbox" />
+          <label for="modal_pixeltrix" class="overlay"></label>
+          <article>
+            <a class="twitter-timeline"
+               href="https://twitter.com/pixeltrix">
+               <div class="loading"><div></div><div></div><div></div><div></div></div>
+            </a>
+          </article>
+        </div>
+      </li>
+      <li>
+        <label for="modal_guilleiguaran" class="fake-link">Guillermo</label>
+
+        <div class="modal">
+          <input id="modal_guilleiguaran" type="checkbox" />
+          <label for="modal_guilleiguaran" class="overlay"></label>
+          <article>
+            <a class="twitter-timeline"
+               href="https://twitter.com/guilleiguaran">
+               <div class="loading"><div></div><div></div><div></div><div></div></div>
+            </a>
+          </article>
+        </div>
+      </li>
+      <li>
+        <label for="modal_cantoniodasilva" class="fake-link">Carlos</label>
+
+        <div class="modal">
+          <input id="modal_cantoniodasilva" type="checkbox" />
+          <label for="modal_cantoniodasilva" class="overlay"></label>
+          <article>
+            <a class="twitter-timeline"
+               href="https://twitter.com/cantoniodasilva">
+               <div class="loading"><div></div><div></div><div></div><div></div></div>
+            </a>
+          </article>
+        </div>
+      </li>
+      <li>
+        <label for="modal__matthewd" class="fake-link">Matthew</label>
+
+        <div class="modal">
+          <input id="modal__matthewd" type="checkbox" />
+          <label for="modal__matthewd" class="overlay"></label>
+          <article>
+            <a class="twitter-timeline"
+               href="https://twitter.com/_matthewd">
+               <div class="loading"><div></div><div></div><div></div><div></div></div>
+            </a>
+          </article>
+        </div>
+      </li>
+      <li>
+        <label for="modal_kaspth" class="fake-link">Kasper</label>
+
+        <div class="modal">
+          <input id="modal_kaspth" type="checkbox" />
+          <label for="modal_kaspth" class="overlay"></label>
+          <article>
+            <a class="twitter-timeline"
+               href="https://twitter.com/kaspth">
+               <div class="loading"><div></div><div></div><div></div><div></div></div>
+            </a>
+          </article>
+        </div>
+      </li>
+      <li>
+        <label for="modal_eileencodes" class="fake-link">Eileen</label>
+
+        <div class="modal">
+          <input id="modal_eileencodes" type="checkbox" />
+          <label for="modal_eileencodes" class="overlay"></label>
+          <article>
+            <a class="twitter-timeline"
+               href="https://twitter.com/eileencodes">
+               <div class="loading"><div></div><div></div><div></div><div></div></div>
+            </a>
+          </article>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div style="background-color: #f7fff6;" class="padding-right wrapper">
+    <h3 class="h-tag">Nice Profiles</h3>
+    <ul>
+        <li>
+          <label for="modal_https://twitter.com/matz_translated" class="fake-link">Matz (Ruby creator)</label>
+
+          <div class="modal">
+            <input id="modal_https://twitter.com/matz_translated" type="checkbox" />
+            <label for="modal_https://twitter.com/matz_translated" class="overlay"></label>
+            <article>
+              <a class="twitter-timeline"
+                 href="https://twitter.com/https://twitter.com/matz_translated">
+                 <div class="loading"><div></div><div></div><div></div><div></div></div>
+              </a>
+            </article>
+          </div>
+        </li>
+        <li>
+          <label for="modal_https://twitter.com/jeremyevans0" class="fake-link">Jeremy Evans (Ruby commiter)</label>
+
+          <div class="modal">
+            <input id="modal_https://twitter.com/jeremyevans0" type="checkbox" />
+            <label for="modal_https://twitter.com/jeremyevans0" class="overlay"></label>
+            <article>
+              <a class="twitter-timeline"
+                 href="https://twitter.com/https://twitter.com/jeremyevans0">
+                 <div class="loading"><div></div><div></div><div></div><div></div></div>
+              </a>
+            </article>
+          </div>
+        </li>
+    </ul>
+  </div>
+</div>
+
+<a name="jobs">
+  <h2 id="jobs">Jobs</h2>
+</a>
+
+  <a href="https://www.linkedin.com/jobs/search/?keywords=rails" target="_blank" class="pseudo button bordered">Linkedin</a>
+  <a href="https://www.indeed.com/jobs?q=rails" target="_blank" class="pseudo button bordered">Indeed</a>
+  <a href="https://www.rubyjobs.com/" target="_blank" class="pseudo button bordered">RubyJobs</a>
+  <a href="https://stackoverflow.com/jobs/developer-jobs-using-ruby-on-rails" target="_blank" class="pseudo button bordered">StackOverflow</a>
+
+<a name="youtube">
+  <h2 id="youtube">Youtube</h2>
+</a>
+
+  <a href="https://www.youtube.com/c/DriftingRuby/videos" target="_blank" class="pseudo button bordered">DriftingRuby</a>
+  <a href="https://www.youtube.com/c/GorailsTV/videos" target="_blank" class="pseudo button bordered">GoRails</a>
+  <a href="https://www.youtube.com/c/TechmakerTV/videos" target="_blank" class="pseudo button bordered">TechmakerTV</a>
+  <a href="https://www.youtube.com/c/Deanin/videos" target="_blank" class="pseudo button bordered">Deanin</a>
+  <a href="https://www.youtube.com/c/Webcrunch/videos" target="_blank" class="pseudo button bordered">Webcrunch</a>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+<script src="javascripts/vanilla.rss.min.js"></script>
+<script>
+  const config =
+    {
+      dateFormatFunction: function(date) { return moment(date, moment.defaultFormat).fromNow() },
+      limit: 15,
+      order: '-publishedDate',
+      layoutTemplate: "<ul>{entries}</ul>",
+      entryTemplate:'<li><a href="{url}" target="_blank">{title}</a><span class="label">{date}</span> <br> </li>'
+    }
+
+  new RSS(document.querySelector("#posts-rss"), ["https://www.reddit.com/r/rubyonrails.rss", "https://dev.to/feed/tag/rails", "https://www.ruby3.dev/feed.xml", "https://weblog.rubyonrails.org/feed/atom.xml", "https://rubytapas.com/feed", "boringrails.com/feed.xml", "https://cprss.s3.amazonaws.com/rubyweekly.com.xml", "http://rubyland.news/feed.rss", "https://ruby.libhunt.com/newsletter/feed", "https://aws.amazon.com/blogs/developer/category/programing-language/ruby/feed"], config)
+    .on('data', (data) => {
+      document.getElementById('posts-rss-loading').style.display = 'none';
+    })
+    .render();
+
+  new RSS(document.querySelector("#questions-rss"), ["https://stackoverflow.com/feeds/tag?tagnames=ruby-on-rails&sort=newest", "https://discuss.rubyonrails.org/latest.rss"], config)
+    .on('data', (data) => {
+      document.getElementById('questions-rss-loading').style.display = 'none';
+    })
+    .render();
+
+  document.onkeydown = function(e){
+    if (e.keyCode == 27) {
+      var mods = document.querySelectorAll('.modal > [type=checkbox]');
+      [].forEach.call(mods, function(mod){ mod.checked = false; });
+    }
+  }
+
+    /*
+    new RSS(
+      document.querySelector("#repositories-rss"),
+      [
+        //"https://medium.com/feed/@henriquefernandez",
+        // "https://mshibanami.github.io/GitHubTrendingRSS/daily/ruby.xml"
+      ],
+      {
+        layoutTemplate: "<ul>{entries}</ul>",
+        entryTemplate:'<li><a href="{url}" target="_blank">{title}</a><br></li>'
+      }
+    ).render();
+     */
+</script>
+
+    </main>
+
+    <footer class="page-footer"> Made with <3 from rubysts to rubysts</footer>
+  </body>
+</html>

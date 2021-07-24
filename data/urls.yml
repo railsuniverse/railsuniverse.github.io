@@ -1,0 +1,11 @@
+posts:
+  - "https://www.reddit.com/r/rubyonrails.rss",
+  - "https://dev.to/feed/tag/rails",
+  - "https://cprss.s3.amazonaws.com/rubyweekly.com.xml",
+  - "https://www.ruby3.dev/feed.xml",
+  - "https://weblog.rubyonrails.org/feed/atom.xml",
+  - "https://rubytapas.com/feed",
+  - "boringrails.com/feed.xml"
+questions:
+  - "https://stackoverflow.com/feeds/tag?tagnames=ruby-on-rails&sort=newest",
+  - "https://discuss.rubyonrails.org/latest.rss"
